@@ -1,0 +1,27 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "home": "cambiardivisa.quickgold.es",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.10",
+    "axios": "^1.3.4",
+    "next": "13.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-gtm-module": "^2.0.11",
+    "sharp": "^0.31.3",
+    "swr": "^2.1.0",
+    "react-map-gl": "^7.0.19",
+    "react-scroll": "^1.8.9",
+    "mapbox-gl": "^2.11.0"
+  }
+}

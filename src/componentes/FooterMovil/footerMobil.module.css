@@ -1,0 +1,93 @@
+.footer {
+    background: #213E58;
+    padding: 20px 20px 90px 20px;
+}
+
+.logo {
+    margin: 30px 0;
+}
+
+.telefono {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.redes {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+}
+
+.redes a svg {
+    color: #0692D0;
+    border-radius: 4px;
+    font-size: 35px;
+}
+
+.contenedorRedes {
+    padding-bottom: 14px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+}
+
+.contenedorRedes p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 12px;
+    color: #FFFFFF;
+}
+
+.listaMenuTitulo {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.ul {
+    opacity: 0;
+    padding: 0 10px;
+    height: 0;
+    transition: height 0.3s;
+    transition-delay: opacity 0.5s;
+}
+
+.ul li {
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    font-weight: 400;
+    padding: 4px 0;
+}
+
+.menuActive {
+    height: 205px;
+}
+
+.menuActivo1 {
+    opacity: 1;
+    transition: 0.2s;
+}
+
+.textoFooter {
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+
+@media (min-width: 610px) {
+    .footer {
+        display: none;
+    }
+}

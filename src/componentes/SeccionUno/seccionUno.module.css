@@ -1,0 +1,73 @@
+.contenedor{
+    max-width: 1020px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 50px 0px 10px 20px;
+}
+.contenedor p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    color: #213E58;
+    width: 90%;
+}
+.titulo{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    color: #213E58;
+    font-family: 'Gotham Black';
+    text-align: center;
+}
+.botonLamar{
+    background: #E83C82;
+    border-radius: 2px;
+    padding: 13px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 290px;
+    height: 40px;
+    text-align: center;
+}
+
+@media (min-width: 1061px) {
+    .contenedor {
+        max-width: 1020px;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 90px 0px 10px 0;
+    }
+
+    .contenedor p {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #213E58;
+    }
+
+    .titulo {
+        font-weight: 900;
+        font-size: 47px;
+        line-height: 37px;
+        color: #213E58;
+        text-align: left;
+    }
+
+    .botonLamar {
+        background: #E83C82;
+        border-radius: 2px;
+        padding: 13px 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        width: 271px;
+        height: 40px;
+    }
+}

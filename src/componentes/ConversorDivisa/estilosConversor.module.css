@@ -1,0 +1,659 @@
+.botonLlamarTienda {
+    background: #E83C82;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    align-items: center;
+    text-align: center;
+    padding: 13px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 280px;
+    margin-top: 10px;
+    display: block;
+    cursor: pointer;
+}
+.contendorBloques{
+    border-radius: 8px;
+    background: #0F2D45;
+    width: 100%;
+    height: auto;
+    padding: 40px 30px;
+    margin-bottom: 30px;
+}
+.contendorBloques h2 {
+    color: #FFF;
+    font-family: "Gotham Black";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.contendorBloquesTexto {
+    color: #FFF;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+.botonComprar,
+.botonVender {
+    align-items: center;
+    padding: 13px 6px;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    border: 0.5px solid #B6CFE9;
+    background: #FFF;
+    color: #B6CFE9;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.botonActivo {
+    background: #0692D0;
+    color: #fff;
+    border: none;
+}
+.contenedorBotones{
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.bloqueCalculadora{
+    border-radius: 8px;
+    background: #FFF;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 26px 15px 26px;
+}
+
+.select{
+    border-radius: 2px;
+    border: 1px solid #0F2D45;
+    background: #FFF;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    font-size: 14px;
+}
+.select p{
+    color: #0F2D45;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.select svg {
+    font-size: 30px;
+    color: #0F2D45;
+}
+.select_monedas {
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    background: #F5F5F5;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14);
+    border-radius: 2px;
+    width: 260px;
+    height: 255px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+    z-index: 50;
+    overflow-x: hidden;
+}
+
+.select_activo {
+    display: block;
+}
+.contenedor_list {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+.contenedor_list:hover  {
+    background-color: #E83C82;
+    color: #fff;
+}
+.contenedor_list:hover .moneda {
+    background-color: #E83C82;
+    color: #fff;
+}
+
+.contenedor_list:hover .nombre {
+    background-color: #E83C82;
+    color: #fff;
+}
+.contenedor_list:hover .acronimo {
+    background-color: #E83C82;
+    color: #fff;
+}
+
+.bandera {
+    display: flex;
+    align-items: center;
+    width: 35px;
+    height: 27px;
+    filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.14));
+}
+
+.bandera img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.moneda {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 13px;
+    color: #213E58;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.moneda span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: #213E58;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.select svg {
+    font-size: 30px;
+}
+.contenedorInputs{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    gap: 10px;
+}
+.inputSuperior{
+    width: 122px;
+    height: 48px;
+    border-radius: 2px;
+    background: #F3FBFE;
+    border: none;
+    outline: none;
+    color: #0F2D45;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: Gotham Black;
+    padding-left: 10px;
+}
+.inputSuperior::placeholder {
+    color: #A6C9E8;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Gotham Book';
+}
+.inputInferior::placeholder {
+    color: #A6C9E8;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-family: 'Gotham Book';
+}
+.inputInferior {
+    width: 122px;
+    height: 48px;
+    border-radius: 2px;
+    background: #F3FBFE;
+    border: none;
+    outline: none;
+    color: #0F2D45;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-family: Gotham Black;
+    padding-left: 10px;
+}
+.contenedorTipoCambio{
+    display: flex;
+    margin-top: 10px;
+}
+.tipoCambioIzq p{
+    color: #0F2D45;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tipoCambioDer p {
+    color: #0F2D45;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.tipoCambioIzq{
+    width: 52%;
+}
+.bloqueCalculadoraTextoSup{
+    color: #0F2D45;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 3px;
+}
+.bloqueBotonLamar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.bloqueBotonLamarTexto{
+    color: #FFF;
+    text-align: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.bloqueDivisaHabitualTexto{
+    color: #FFF;
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+.bloqueDivisaHabitual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+}
+.contenedorDivisaHabitual{
+    display: flex;
+    gap: 7px;
+}
+.bloqueDivisaHabitual1, .bloqueDivisaHabitual2, .bloqueDivisaHabitual3,.bloqueDivisaHabitual4,.bloqueDivisaHabitual5,.bloqueDivisaHabitual6{
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
+    text-align: center;
+}
+  .bloqueIzq,
+  .bloqueDer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  .acronimoTexto{
+    color: #0F2D45;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15px;
+  }
+@media (min-width: 610px) {
+    .botonLlamarTienda {
+        background: #E83C82;
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 2px;
+        align-items: center;
+        text-align: center;
+        padding: 13px 0px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        width: 280px;
+        margin: 10px 0;
+        display: block;
+    }
+    .contendorBloques {
+        border-radius: 8px;
+        background: #0F2D45;
+        width: 480px;
+        height: 670px;
+        padding: 40px 30px;
+    }
+    .bloqueIzq,
+    .bloqueDer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+   .botonComprar,
+   .botonVender {
+       align-items: center;
+       padding: 13px 10px;
+       box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.1);
+       border-radius: 2px;
+       border: 0.5px solid #B6CFE9;
+       background: #FFF;
+       color: #B6CFE9;
+       font-weight: 700;
+       font-size: 14px;
+       line-height: 14px;
+       text-align: center;
+       cursor: pointer;
+       letter-spacing: 1px;
+   }
+    
+        .botonActivo {
+            background: #0692D0;
+            color: #fff;
+            border: none;
+        }
+    
+        .contenedorBotones {
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+        }
+    
+        .bloqueCalculadora {
+            border-radius: 8px;
+            background: #FFF;
+            width: 100%;
+            height: 235px;
+            margin: 20px auto;
+            padding: 20px 26px 15px 26px;
+        }
+    
+        .select {
+            border-radius: 2px;
+            border: 1px solid #0F2D45;
+            background: #FFF;
+            width: 100%;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            position: relative;
+            font-weight: 700;
+            font-size: 17px;
+        }
+    
+        .select p {
+            color: #0F2D45;
+            text-align: center;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    
+        .select svg {
+            font-size: 30px;
+            color: #0F2D45;
+        }
+    
+        .select_monedas {
+            position: absolute;
+            top: 55px;
+            left: 0px;
+            background: #F5F5F5;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.14);
+            border-radius: 2px;
+            width: 365px;
+            height: 255px;
+            display: flex;
+            flex-direction: column;
+            display: none;
+            z-index: 50;
+            overflow-x: hidden;
+        }
+    
+        .select_activo {
+            display: block;
+        }
+    
+        .contenedor_list {
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+        }
+    
+        .contenedor_list:hover {
+            background-color: #E83C82;
+            color: #fff;
+        }
+    
+        .contenedor_list:hover .moneda {
+            background-color: #E83C82;
+            color: #fff;
+        }
+    
+        .contenedor_list:hover .nombre {
+            background-color: #E83C82;
+            color: #fff;
+        }
+    
+        .contenedor_list:hover .acronimo {
+            background-color: #E83C82;
+            color: #fff;
+        }
+    
+        .bandera {
+            display: flex;
+            align-items: center;
+            width: 35px;
+            height: 27px;
+            filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.14));
+        }
+    
+        .bandera img {
+            width: 100%;
+            border-radius: 4px;
+        }
+    
+        .moneda {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 13px;
+            color: #213E58;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+    
+        .moneda span {
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 16px;
+            color: #213E58;
+            margin-left: 5px;
+            width: 100%;
+        }
+    
+        .select svg {
+            font-size: 30px;
+        }
+    
+        .contenedorInputs {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            border-top: 1px solid #000;
+            margin-top: 20px;
+        }
+    
+        .inputSuperior {
+            width: 187px;
+            height: 48px;
+            border-radius: 2px;
+            background: #F3FBFE;
+            border: none;
+            outline: none;
+            color: #0F2D45;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-family: Gotham Black;
+        }
+    
+        .inputSuperior::placeholder {
+            color: #A6C9E8;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+        .inputInferior::placeholder {
+            color: #A6C9E8;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+        .inputInferior {
+            width: 187px;
+            height: 48px;
+            border-radius: 2px;
+            background: #F3FBFE;
+            border: none;
+            outline: none;
+            color: #0F2D45;
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            font-family: Gotham Black;
+        }
+    
+        .contenedorTipoCambio {
+            display: flex;
+            margin-top: 10px;
+        }
+    
+        .tipoCambioIzq p {
+            color: #0F2D45;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+        .tipoCambioDer p {
+            color: #0F2D45;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+        .tipoCambioIzq {
+            width: 52%;
+        }
+    
+        .bloqueCalculadoraTextoSup {
+            color: #0F2D45;
+            text-align: center;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 3px;
+        }
+    
+        .bloqueBotonLamar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .bloqueBotonLamarTexto {
+            color: #FFF;
+            text-align: center;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    
+        .bloqueDivisaHabitualTexto {
+            color: #FFF;
+            text-align: center;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 10px;
+        }
+    
+        .bloqueDivisaHabitual {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+            padding-bottom: 20px;
+        }
+    
+        .contenedorDivisaHabitual {
+            display: flex;
+            gap: 15px;
+        }
+    
+        .bloqueDivisaHabitual1,
+        .bloqueDivisaHabitual2,
+        .bloqueDivisaHabitual3,
+        .bloqueDivisaHabitual4,
+        .bloqueDivisaHabitual5,
+        .bloqueDivisaHabitual6 {
+            color: #fff;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-decoration-line: underline;
+            cursor: pointer;
+            text-align: center;
+        }
+        .acronimoTexto {
+            color: #0F2D45;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-top: 15px;
+        }
+}

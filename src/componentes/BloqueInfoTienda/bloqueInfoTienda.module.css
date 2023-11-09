@@ -1,0 +1,344 @@
+.contenedorSeccionTres {
+    padding: 0;
+    width: 100%;
+}
+
+.contenedorInfoTienda {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+    flex-direction: column;
+
+}
+
+.bloqueIzqInfoTienda {
+    width: 100%;
+    height: 214px;
+    border-radius: 8px;
+    border: 1px solid #0F2D45;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.bloqueDerInfoTienda {
+    width: 100%;
+    height: 205px;
+    border-radius: 8px;
+    border: 1px solid #0F2D45;
+    padding: 20px;
+}
+
+.bloqueIzqTitulo,
+.bloqueDerTitulo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #213E58;
+    font-family: 'Gotham Black';
+}
+
+.bloqueDerHorarioHabitual {
+    font-size: 14px;
+    font-style: italic;
+    color: #0692D0;
+    margin-bottom: 10px;
+}
+
+.bloqueIzqDireccion {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #213E58;
+    margin-bottom: 10px;
+}
+
+.bloqueIzqTel {
+    font-family: 'Gotham Bold';
+    font-size: 20px;
+    line-height: 17px;
+    color: #213E58;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconosTelefono a {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.telefonoIcon svg {
+    background: #E83C82;
+    border-radius: 2px;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+}
+
+.WhatsAppIcon {
+    background: #309E3A;
+    border-radius: 2px;
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bloqueDerdias,
+.bloqueDerSabado {
+    font-family: 'Gotham Bold';
+    font-size: 14px;
+    line-height: 20px;
+    color: #213E58;
+}
+
+.bloqueDerHorario,
+.bloqueDerSabadoHorario {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #213E58;
+}
+
+.bloqueDerDomingo {
+    font-size: 14px;
+    line-height: 20px;
+    color: #213E58;
+    font-family: 'Gotham Bold';
+}
+
+.bloqueDerDomingoCerrado {
+    font-size: 14px;
+    line-height: 20px;
+    color: #213E58;
+    font-weight: 400;
+}
+
+.contenedorMapa {
+    width: 100%;
+    height: 360px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.contenedorMapa iframe {
+    border: none;
+    border-radius: 8px;
+}
+
+.contenedorResenasGoogle {
+    width: 100%;
+    height: auto;
+    margin: 40px 0;
+    overflow-y: auto;
+    display: flex;
+    gap: 20px;
+
+}
+
+.contenedorResenasGoogle::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contenedorResenasGoogle::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.contenedorResenasGoogle::-webkit-scrollbar-button:increment,
+.contenedorResenasGoogle::-webkit-scrollbar-button {
+    display: none;
+}
+
+.contenedorResenasGoogle::-webkit-scrollbar:horizontal {
+    background: #E9E9E9;
+    border-radius: 20px;
+}
+
+.contenedorResenasGoogle::-webkit-scrollbar-thumb {
+    background: #0692D0;
+    border-radius: 20px;
+}
+
+.contenedorIconos {
+    display: flex;
+    gap: 20px;
+}
+
+@media (min-width: 610px) {
+    .contenedorSeccionTres {
+        padding: 0;
+        width: 495px;
+    }
+
+    .contenedorInfoTienda {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0;
+        flex-direction: row;
+        padding: 0;
+    }
+
+    .bloqueIzqInfoTienda {
+        width: 250px;
+        height: 226px;
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .bloqueDerInfoTienda {
+        width: 200px;
+        height: 226px;
+        border-radius: 8px;
+        order: 1px solid #0F2D45;
+        padding: 20px;
+    }
+
+    .bloqueIzqTitulo,
+    .bloqueDerTitulo {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #213E58;
+        font-family: 'Gotham Bold';
+    }
+
+    .bloqueDerHorarioHabitual {
+        font-size: 14px;
+        font-style: italic;
+        color: #0692D0;
+        margin-bottom: 10px;
+    }
+
+    .bloqueIzqDireccion {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #213E58;
+        margin-bottom: 10px;
+    }
+
+    .bloqueIzqTel {
+        font-family: 'Gotham Bold';
+        font-size: 17px;
+        line-height: 17px;
+        color: #213E58;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .iconosTelefono a {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .telefonoIcon svg {
+        background: #E83C82;
+        border-radius: 2px;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        padding: 5px;
+    }
+
+    .WhatsAppIcon {
+        background: #309E3A;
+        border-radius: 2px;
+        color: #fff;
+        width: 36px;
+        height: 36px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bloqueDerdias,
+    .bloqueDerSabado {
+        font-family: 'Gotham Bold';
+        font-size: 14px;
+        line-height: 20px;
+        color: #213E58;
+    }
+
+    .bloqueDerHorario,
+    .bloqueDerSabadoHorario {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #213E58;
+    }
+
+    .bloqueDerDomingo {
+        font-size: 14px;
+        line-height: 20px;
+        color: #213E58;
+        font-family: 'Gotham Bold';
+    }
+
+    .bloqueDerDomingoCerrado {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #213E58;
+    }
+
+    .contenedorMapa {
+        width: 495px;
+        height: 360px;
+        border-radius: 8px;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .contenedorMapa iframe {
+        border: none;
+        border-radius: 8px;
+    }
+
+    .contenedorResenasGoogle {
+        width: 480px;
+        height: auto;
+        margin: 40px 0;
+        overflow-y: auto;
+        display: flex;
+        gap: 20px;
+        padding: 0;
+
+    }
+
+    .contenedorResenasGoogle::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+
+    .contenedorResenasGoogle::-webkit-scrollbar:vertical {
+        width: 10px;
+    }
+
+    .contenedorResenasGoogle::-webkit-scrollbar-button:increment,
+    .contenedorResenasGoogle::-webkit-scrollbar-button {
+        display: none;
+    }
+
+    .contenedorResenasGoogle::-webkit-scrollbar:horizontal {
+        height: 10px;
+    }
+
+    .contenedorResenasGoogle::-webkit-scrollbar-thumb {
+        background: #0692D0;
+        border-radius: 20px;
+        border: 2px solid #f1f2f3;
+    }
+
+    .contenedorIconos {
+        display: flex;
+        gap: 20px;
+    }
+}

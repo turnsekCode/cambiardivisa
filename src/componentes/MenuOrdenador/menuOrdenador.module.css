@@ -1,0 +1,188 @@
+.contenedorMenuSticky {
+    display: none;
+}
+.contenedorMenu {
+    display: none;
+
+}
+
+.botonLlamar a {
+    display: none;
+}
+
+@media (min-width: 610px) {
+    .headersticky {
+        position: fixed;
+        top: 0;
+        background: #036F9A;
+        width: 100%;
+    }
+
+    .contenedorMenuSticky {
+        height: 50px;
+        width: 100%;
+        display: block;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.24);
+    }
+
+    .contenedorMenuSticky ul {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1060px;
+    }
+
+    .contenedorMenuSticky ul a {
+        padding: 13px 20px;
+        transition: 0.3s;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorMenuSticky ul li:hover {
+        background: #0A6A94;
+        border-radius: 2px;
+    }
+
+    .contenedorMenuSticky ul li {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 13px;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        font-family: 'Gotham Bold';
+    }
+
+    .contenedorMenu {
+        height: 50px;
+        width: 100%;
+        display: block;
+    }
+
+    .contenedorMenu ul {
+        display: flex;
+        margin: 0 auto;
+        max-width: 1060px;
+    }
+
+    .contenedorMenu ul a {
+        padding: 13px 20px;
+        transition: 0.3s;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorMenu ul li:hover {
+        background: #0A6A94;
+        border-radius: 2px;
+    }
+
+    .contenedorMenu ul li {
+        color: #FFFFFF;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 13px;
+        font-style: normal;
+        display: flex;
+        align-items: center;
+        font-family: 'Gotham Bold';
+    }
+    .contenedorSubMenuTiendas{
+        position: relative;
+    }
+    .subMenuTiendas{
+        position: absolute;
+        top: 50px;
+        left: -12px;
+        background: #0F2D45;
+        opacity: 1;
+        height: 0;
+        overflow-x: hidden;
+        transition: 0.08s;
+        width: 900px;
+        padding: 0;
+        column-count: 5;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 30%);
+    }
+    .subMenuTiendas::-webkit-scrollbar{
+        -webkit-appearance: none;
+    }
+    .subMenuTiendas::-webkit-scrollbar:vertical{
+        width: 5px;
+    }
+    .subMenuTiendas::-webkit-scrollbar-track{
+        border-radius: 10px;
+    }
+    .subMenuTiendas::-webkit-scrollbar-thumb{
+        background-color: rgba(0, 0, 0, 0.24);
+        border-radius: 8px; 
+    }
+    .subMenuTiendas a{
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 2px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 10px;
+        font-family: 'Gotham Bold';
+    }
+    .subMenuTiendas a:hover{
+        color: #fbbf04;
+    }
+    .contenedorMenu .contenedorSubMenuTiendas:hover  .subMenuTiendas {
+        display: block;
+        height: 330px;
+        padding: 15px 20px 0 0;
+        column-count: 5;
+        width: 915px;
+    }
+    .contenedorSubMenuServicios {
+        position: relative;
+    }
+    .servicios{
+        display: flex;
+        align-items: center;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+    .subMenuServicios {
+        position: absolute;
+        top: 50px;
+        left: -30px;
+        background: #0F2D45;
+        opacity: 1;
+        height: 0;
+        overflow: hidden;
+        transition: 0.1s;
+        scrollbar-width: 10px;
+        box-shadow: 0px 4px 8px rgb(0 0 0 / 30%);
+    }
+    .subMenuServicios a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        border-radius: 2px;
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Gotham Bold';
+    }
+    .subMenuServicios a:hover {
+        color: #fbbf04;
+    }
+    .contenedorMenu .contenedorSubMenuServicios:hover .subMenuServicios {
+        display: block;
+        height: 280px;
+    }
+
+}

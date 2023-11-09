@@ -1,0 +1,272 @@
+.contenedorListadoTiendas{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin-top: 0;
+}
+.contenedorListadoTiendas h2{
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+    color: #213E58;
+    margin-bottom: 15px;
+}
+
+.img_stars {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+    background-size: 14px 13px;
+    height: 13px;
+    top: 1px;
+    width: 69px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    left: 3px;
+}
+
+.imgValoracion {
+    background-repeat: repeat-x;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+    background-size: 14px 13px;
+    height: 13px;
+    top: 1px;
+}
+.bloqueResenas{
+display: flex;
+justify-content: space-between;
+}
+.contenedorValoraciones{
+margin-left: 10px;
+}
+.valoracionResenas{
+font-weight: 700;
+font-size: 16px;
+line-height: 20px;
+color: #FBBE00;
+margin: 0 7px 0 8px;
+}
+.contenedorResenas{
+display: flex;
+align-items: center;
+}
+.contenedorLogoGoogle{
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+}
+.numero_reviews span a{
+color: #0692D0;
+font-weight: 700;
+font-size: 10px;
+line-height: 14px;
+}
+.numero_reviews span a:hover {
+    text-decoration: underline;
+}
+.resenasGoogle{
+font-weight: 700;
+font-size: 13px;
+line-height: 20px;
+text-align: right;
+color: #213E58;
+text-align: left;
+}
+.resenasGoogle span{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    color: #213E58;
+}
+.verResenas a{
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    color: #E83C82;
+}
+.verResenas a:hover {
+   text-decoration: underline;
+}
+.direccion{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #213E58;
+    margin-bottom: 10px;
+}
+.telefono{
+    background: #E83C82;
+    border-radius: 2px;
+    padding: 13px 13px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    color: #FFFFFF;
+    width: 280px;
+    height: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+.mapa{
+    width: 100%;
+    height: 360px;
+}
+.mapa iframe{
+    border: none;
+}
+.nombreTienda{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #213E58;
+}
+
+
+
+@media (min-width: 1061px) {
+.contenedorListadoTiendas {
+        border-radius: 12px;
+        width: 505px;
+        height: 100%;
+        padding: 0 20px;
+        margin-top: 0;
+    }
+
+    .contenedorListadoTiendas h2 {
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 37px;
+        color: #213E58;
+        margin-bottom: 15px;
+    }
+
+    .img_stars {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+        width: 69px;
+        background-repeat: repeat-x;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        left: 3px;
+    }
+
+    .imgValoracion {
+        background-repeat: repeat-x;
+        display: block;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+    }
+
+    .bloqueResenas {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedorValoraciones {
+        margin-left: 10px;
+    }
+
+    .valoracionResenas {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FBBE00;
+        margin: 0 7px 0 8px;
+    }
+
+    .contenedorResenas {
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorLogoGoogle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .numero_reviews span a {
+        color: #0692D0;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .numero_reviews span a:hover {
+        text-decoration: underline;
+    }
+
+    .resenasGoogle {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: right;
+        color: #213E58;
+        text-align: left;
+    }
+
+    .resenasGoogle span {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: right;
+        color: #213E58;
+    }
+
+    .verResenas a {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 10px;
+        color: #E83C82;
+    }
+
+    .verResenas a:hover {
+        text-decoration: underline;
+    }
+
+    .direccion {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 12px;
+        color: #213E58;
+        margin-bottom: 10px;
+    }
+
+    .telefono {
+        background: #E83C82;
+        border-radius: 2px;
+        padding: 13px 20px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 14px;
+        color: #FFFFFF;
+        width: 271px;
+        height: 40px;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    .mapa {
+        width: 100%;
+        height: 360px;
+    }
+
+    .mapa iframe {
+        border: none;
+    }
+
+    .nombreTienda {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #213E58;
+    }
+}

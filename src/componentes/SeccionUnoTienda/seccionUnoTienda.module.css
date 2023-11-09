@@ -1,0 +1,259 @@
+.contenedorSeccionUno {
+    display: flex;
+    margin-top: 65px;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 0;
+}
+
+.bloqueDer {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.bloqueDer svg {
+    position: absolute;
+    color: #0692D0;
+    bottom: 50px;
+    left: 60px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.imagenTienda {
+    cursor: pointer;
+}
+
+.bloqueDer h1 {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 33px;
+    color: #213E58;
+    padding-top: 20px;
+    font-family: 'Gotham Black';
+}
+
+.img_stars {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAQAAAAz1Zf0AAAAWklEQVR4AY3O0QbDQBCG0UNYQi0hhBJqr8Iy7/94vewYlp65/Ay//4WlLnQLt3BbeIRH5jBFPVMHmlHS0CRnSqdiT3GH1edb8RGmoy4GwrBhM4Qmebn8XDrwBW7xChrojlOZAAAAAElFTkSuQmCC);
+    background-size: 14px 13px;
+    height: 13px;
+    top: 1px;
+    width: 69px;
+    background-repeat: repeat-x;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    left: 3px;
+}
+
+.imgValoracion {
+    background-repeat: repeat-x;
+    display: block;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+    background-size: 14px 13px;
+    height: 13px;
+    top: 1px;
+}
+
+.bloqueResenas {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.contenedorValoraciones {
+    margin-left: 10px;
+}
+
+.valoracionResenas {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FBBE00;
+    margin: 0 7px 0 8px;
+}
+
+.contenedorResenas {
+    display: flex;
+    align-items: center;
+}
+
+.contenedorLogoGoogle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.numero_reviews span a {
+    color: #0692D0;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.numero_reviews span a:hover {
+    text-decoration: underline;
+}
+
+.resenasGoogle {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    color: #213E58;
+    text-align: left;
+}
+
+.resenasGoogle span {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: right;
+    color: #213E58;
+}
+
+.verResenas a {
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px;
+    color: #E83C82;
+    margin-left: 10px;
+}
+
+.verResenas a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 610px) {
+    .contenedorSeccionUno {
+        display: flex;
+        margin: 120px auto 30px;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0;
+        gap: 10px;
+        max-width: 1020px;
+    }
+
+    .bloqueDer {
+        display: flex;
+        width: 70%;
+        position: relative;
+    }
+
+    .bloqueDer svg {
+        position: absolute;
+        color: #0692D0;
+        bottom: 0;
+        left: 60px;
+        background: #fff;
+        border-radius: 50%;
+    }
+
+    .imagenTienda {
+        cursor: pointer;
+    }
+
+    .bloqueDer h1 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 33px;
+        color: #213E58;
+        padding: 0 25px 0 0 ;
+        font-family: 'Gotham Black';
+    }
+
+    .img_stars {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+        width: 69px;
+        background-repeat: repeat-x;
+        display: inline-block;
+        overflow: hidden;
+        position: relative;
+        left: 3px;
+    }
+
+    .imgValoracion {
+        background-repeat: repeat-x;
+        display: block;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAZklEQVR4AWL4uYWZCdAJHVMBAIJAAG1DoAtjGarYxxjqwHADnA8HFuWL3E8puH8gAqILPaB34Qq4FAQ1yoo+8ES7NRWKe6u+Ogo0XjtaCmlSd6K/4OQQOF0JKYTsMasgOIRkBfDZATita/85jgoHAAAAAElFTkSuQmCC);
+        background-size: 14px 13px;
+        height: 13px;
+        top: 1px;
+    }
+
+    .bloqueResenas {
+        display: flex;
+        justify-content: space-between;
+        width: 317px;
+        margin-top: 0;
+    }
+
+    .contenedorValoraciones {
+        margin-left: 10px;
+    }
+
+    .valoracionResenas {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FBBE00;
+        margin: 0 7px 0 8px;
+    }
+
+    .contenedorResenas {
+        display: flex;
+        align-items: center;
+    }
+
+    .contenedorLogoGoogle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .numero_reviews span a {
+        color: #0692D0;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 14px;
+    }
+
+    .numero_reviews span a:hover {
+        text-decoration: underline;
+    }
+
+    .resenasGoogle {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: right;
+        color: #213E58;
+        text-align: left;
+    }
+
+    .resenasGoogle span {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: right;
+        color: #213E58;
+    }
+
+    .verResenas a {
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 10px;
+        color: #E83C82;
+        margin-left: 10px;
+    }
+
+    .verResenas a:hover {
+        text-decoration: underline;
+    }
+}

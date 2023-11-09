@@ -1,0 +1,388 @@
+.contenedorMapa{
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 0;
+    width: 100%;
+}
+.contenedorbloqueIzq{
+    height: 463px;
+}
+.bloqueDer{
+    width: 100%;
+    height: 500px;
+    background-color: #f1f1f1;
+    
+}
+.bloqueIzq{
+    width: 100%;
+    border-bottom: 1px solid;
+    padding-bottom: 15px;
+}
+.bloqueIzq h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    color: #213E58;
+    padding: 0 20px;
+}
+.bloqueIzq p{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #213E58;
+    margin-top: 0;
+    font-family: 'Gotham Medium';
+}
+.bloqueIzq p span{
+    color: #0692D0;
+}
+.linea {
+    position: relative;
+    display: inline-block;
+    margin-left: 5px;
+}
+.linea:before {
+    content: '';
+    width: 100%;
+    z-index: -1;
+    border-bottom: 7px solid #FBBE00;
+    position: absolute;
+    display: block;
+    height: 5px;
+    transform: translateY(30%);
+}
+.linea:before {
+    left: 2px;
+    top: calc(50% - 1px);
+}
+.reset_map {
+    z-index: 90;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    color: #000;
+}
+.contenedorTiendas {
+    padding: 0 20px;
+    overflow-x: hidden;
+    height: 370px;
+    margin-top: 20px;
+}
+.contenedorTiendas::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contenedorTiendas::-webkit-scrollbar:vertical {
+    width: 10px;
+}
+
+.contenedorTiendas::-webkit-scrollbar-button:increment,
+.contenedorTiendas::-webkit-scrollbar-button {
+    display: none;
+}
+
+.contenedorTiendas::-webkit-scrollbar:horizontal {
+    height: 10px;
+}
+
+.contenedorTiendas::-webkit-scrollbar-thumb {
+    background: #B0B0B0;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+.contenedorTiendas h3 {
+    cursor: pointer;
+    color:  #213E58;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    font-family: 'Gotham Medium';
+    letter-spacing: 0.5px;
+}
+.tienda {
+    margin: 5px 0px 10px;
+    cursor: pointer;
+}
+
+.tienda h5 {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #213E58;
+}
+
+.tienda p {
+    color: #213E58;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.mapboxgl-popup-close-button {
+    font-size: 25px;
+}
+
+   .nombre_ciudad_popup {
+       color: #0F2D45;
+       font-size: 12px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 15px;
+       margin-bottom: 10px;
+    font-family: 'Gotham Book';
+   }
+
+   .direccion_popup {
+       color: #0F2D45;
+       font-size: 13px;
+       font-style: normal;
+       font-weight: 700;
+       line-height: 15px;
+        font-family: 'Gotham Book';
+        outline: none;
+   }
+
+   .telefono_popup {
+       color: #0F2D45;
+       font-size: 13px;
+       font-style: normal;
+       font-weight: 400;
+       line-height: 15px;
+       display: flex;
+       margin-top: 10px;
+        font-family: 'Gotham Book';
+   }
+
+   .telefono_popup span svg {
+       color: #000D20;
+       font-size: 20px;
+   }
+
+.boton_como_llegar {
+    padding: 2px 8px;
+    background: #0692D0;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 26.797px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    border: none;
+    border-radius: 2px;
+    margin: 10px 3px 0 0;
+    display: none;
+}
+.boton_popUp{
+    padding: 2px 8px;
+    background: #0692D0;
+    height: 26.797px;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    border: none;
+    border-radius: 2px;
+    margin: 10px 3px 0 0;
+}
+.contenedorInfoTiendaMapa{
+    padding: 13px 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-bottom: 1px solid #F5F5F5;
+}
+.contenedorInfoTiendaMapa:hover {
+    background: #EBF6FB;
+    padding: 13px 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    border-bottom: none;
+}
+.contenedorInfoTiendaMapaActivo {
+    background: #EBF6FB;
+    padding: 13px 8px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+@media (min-width: 610px) {
+    .contenedorMapa {
+            display: flex;
+            margin-top: 0;
+            flex-direction: column;
+            width: 478px;
+        }
+    
+        .bloqueDer {
+            width: 474px;
+            height: 412px;
+            background-color: #f1f1f1;
+        }
+    
+        .bloqueIzq {
+            width: 100%;
+            border-bottom: 2px solid #0F2D45;
+            padding-bottom: 30px;
+            margin-top: 20px;
+        }
+    
+        .bloqueIzq h2 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 29px;
+            text-align: center;
+            color: #213E58;
+        }
+    
+        .bloqueIzq p {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 19px;
+            text-align: left;
+            color: #213E58;
+            margin-top: 0;
+            font-family: 'Gotham Medium';
+        }
+    
+        .bloqueIzq p span {
+            color: #0692D0;
+        }
+    
+        .linea {
+            position: relative;
+            display: inline-block;
+            margin-left: 5px;
+        }
+    
+        .linea:before {
+            content: '';
+            width: 100%;
+            z-index: -1;
+            border-bottom: 7px solid #FBBE00;
+            position: absolute;
+            display: block;
+            height: 5px;
+            transform: translateY(30%);
+        }
+    
+        .linea:before {
+            left: 2px;
+            top: calc(50% - 1px);
+        }
+        .reset_map {
+            z-index: 90;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #fff;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            color: #000;
+        }
+        .contenedorTiendas {
+            padding: 0 20px 0 0;
+            overflow-x: hidden;
+            height: 370px;
+        }
+
+        .tienda {
+            margin: 5px 0px 10px;
+            cursor: pointer;
+        }
+
+        .tienda h5 {
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            color: #213E58;
+        }
+
+        .tienda p {
+            color: #213E58;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            padding-right: 205px;
+        }
+
+        .nombre_ciudad_popup {
+            color: #0F2D45;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            margin-bottom: 10px;
+            font-family: 'Gotham Book';
+        }
+
+        .direccion_popup {
+            color: #0F2D45;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 15px;
+            font-family: 'Gotham Book';
+        }
+
+        .telefono_popup {
+            color: #0F2D45;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            display: flex;
+            margin-top: 10px;
+            font-family: 'Gotham Book';
+        }
+
+        .telefono_popup span svg {
+            color: #000D20;
+            font-size: 20px;
+        }
+
+        .boton_como_llegar {
+            background: #0692D0;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            height: 26.797px;
+            color: #FFF;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            border: none;
+            border-radius: 2px;
+            margin: 10px 3px 0 0;
+        }
+        .boton_popUp {
+            padding: 2px 8px;
+            background: #0692D0;
+            height: 26.797px;
+            color: #FFF;
+            text-align: center;
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 15px;
+            border: none;
+            border-radius: 2px;
+            margin: 10px 3px 0 0;
+            font-family: 'Gotham Book';
+        }
+}

@@ -1,0 +1,48 @@
+.botonLlamar {
+    width: 140px;
+    height: 40px;
+    background: #E83C82;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.botonWhatsapp {
+    width: 140px;
+    height: 40px;
+    background: #10D347;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.contenedorBotones {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    gap: 10px;
+}
+
+
+
+@media (min-width: 610px) {
+    .contenedorBotones {
+        display: none;
+    }
+}

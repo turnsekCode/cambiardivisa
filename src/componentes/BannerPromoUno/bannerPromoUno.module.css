@@ -1,0 +1,37 @@
+.contenedorBannerUno {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.bannerDesktop {
+    display: none;
+}
+  .bannerMobil {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+@media (min-width: 1061px) {
+    .contenedorBannerUno {
+        width: 1060px;
+        height: 160px;
+        border-radius: 8px;
+        margin: 40px auto;
+        padding: 0;
+    }
+
+    .bannerDesktop {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        display: block;
+    }
+    .bannerMobil{
+        display: none;
+    }
+}

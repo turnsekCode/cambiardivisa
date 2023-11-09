@@ -1,0 +1,31 @@
+.contenedorBotonFijo{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 8px;
+    left: 0;
+    z-index: 100;
+}
+.contenedorBotonFijo a {
+    width: 240px;
+    height: 55px;
+    background: #E83C82;
+    border-radius: 2px;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 1061px) {
+    .contenedorBotonFijo{
+        display: none;
+    }
+}
