@@ -31,7 +31,7 @@ const FooterMobil = () => {
         </a>
       </figure>
       <div className={styles.contenedorRedes}>
-        <a className={styles.telefono} href="tel:900373629">
+        {/*<a className={styles.telefono} href="tel:900373629">
           900 373 629
         </a>
         <div className={styles.redes}>
@@ -63,7 +63,7 @@ const FooterMobil = () => {
           >
             <TwitterIcon />
           </a>
-        </div>
+        </div>*/}
         <a title="política de privacidad" href="/politica-de-privacidad">
           <p>política de privacidad</p>
         </a>
@@ -73,7 +73,7 @@ const FooterMobil = () => {
         </a>
         {/*<p>dossier Franquicia</p>*/}
       </div>
-      <div className={styles.contenedorMenuFooter}>
+      {/*<div className={styles.contenedorMenuFooter}>
         <div
           className={styles.listaMenu}
           onClick={() => {
@@ -152,7 +152,7 @@ const FooterMobil = () => {
               >
                 Preguntas frecuentes
               </a>
-          </li>*/}
+          </li>
             <li>
               <a href="/tiendas" title="Ir a localizador de tiendas">
                 Localizador de tiendas
@@ -163,16 +163,16 @@ const FooterMobil = () => {
                 Mapa del sitio
               </a>
             </li>
-            {/* <li>
+             <li>
               <a href="https://quickgold.es/contacto" title="Ir a contacto">
                 Contacto
               </a>
-        </li>*/}
-            {/* <li>
+        </li>
+             <li>
               <a href="https://quickgold.es/blog/" title="Ir a blog">
                 Blog
               </a>
-          </li>*/}
+          </li>
           </ul>
         </div>
         <div
@@ -199,11 +199,11 @@ const FooterMobil = () => {
                 Abrir una tienda Quickgold
               </a>
             </li>
-            {/*<li>
+            <li>
               <a href="/" title="Dossier">
                 Dossier Franquicia
               </a>
-          </li>*/}
+          </li>
             <li>
               <a href="/trabaja-con-nosotros" title="Ir a trabaja con nosotros">
                 Trabaja con nosotros
@@ -211,7 +211,7 @@ const FooterMobil = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </div>*/}
       <p className={styles.textoFooter}>
         © 2023 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS
         LUMIERE, 23, NAVE 9 46980 PATERNA, VALENCIA - central@quickgold.es - 900

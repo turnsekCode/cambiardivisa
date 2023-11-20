@@ -27,7 +27,7 @@ const Footer = () => {
             />
           </a>
         </figure>
-        <div className={styles.contenedorEnlaces}>
+        {/*<div className={styles.contenedorEnlaces}>
           <div className={styles.enlaces}>
             <h3>servicios</h3>
             <ul>
@@ -91,7 +91,7 @@ const Footer = () => {
                 >
                   Preguntas frecuentes
                 </a>
-  </li>*/}
+  </li>
               <li>
                 <a
                   title="Ir a localizador tiendas"
@@ -112,12 +112,12 @@ const Footer = () => {
                 <a title="Ir a contacto" href="https://quickgold.es/contacto">
                   Contacto
                 </a>
-</li>*/}
-              {/*<li>
+</li>
+              <li>
                 <a title="Ir a blog" href="https://quickgold.es/blog">
                   Blog
                 </a>
-  </li>*/}
+  </li>
             </ul>
           </div>
           <div className={styles.enlaces}>
@@ -135,7 +135,7 @@ const Footer = () => {
                 <a title="texto" href="/">
                   Dossier Franquicia
                 </a>
-</li>*/}
+</li>
               <li>
                 <a
                   title="Ir a trabaja con nosotros"
@@ -183,7 +183,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div>*/}
         <div className={styles.politicaPrivacidad}>
           <a
             title="política de privacidad"
