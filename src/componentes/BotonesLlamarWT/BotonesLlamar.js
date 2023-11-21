@@ -7,7 +7,6 @@ const BotonesLlamar = ({ ciudad }) => {
       <a className={styles.botonLlamar} href={`tel:${ciudad?.acf?.telefono}`}>
         LLAMAR
       </a>
-
       <a
         className={styles.botonWhatsapp}
         target="_blank"

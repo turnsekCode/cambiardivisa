@@ -16,11 +16,12 @@ export default function Layout({ children, menu_list, ciudad }) {
         {children}
         <FooterMobil /> <Footer />
         {/*<ScrollToTop smooth />*/}
-        {ciudad?.acf?.tienda === "" ? (
+        {/*ciudad?.acf?.tienda === "" ? (
           <BotonLamarFijo ciudad={ciudad} />
         ) : (
           <BotonesLlamar ciudad={ciudad} />
-        )}
+        )*/}
+        <BotonLamarFijo ciudad={ciudad} />
       </main>
     </>
   );

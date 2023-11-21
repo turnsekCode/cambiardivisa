@@ -13,19 +13,6 @@ module.exports = {
 
 /***/ }),
 
-/***/ 5632:
-/***/ ((module) => {
-
-// Exports
-module.exports = {
-	"botonLlamar": "botonesLlamar_botonLlamar__c3u_8",
-	"botonWhatsapp": "botonesLlamar_botonWhatsapp__2CULg",
-	"contenedorBotones": "botonesLlamar_contenedorBotones__oTO56"
-};
-
-
-/***/ }),
-
 /***/ 9633:
 /***/ ((module) => {
 
@@ -1175,24 +1162,21 @@ const BotonLlamarFijo = ({ ciudad  })=>{
 };
 /* harmony default export */ const BotonLlamarFijo_BotonLlamarFijo = (BotonLlamarFijo);
 
-// EXTERNAL MODULE: ./src/componentes/BotonesLlamarWT/botonesLlamar.module.css
-var botonesLlamar_module = __webpack_require__(5632);
-var botonesLlamar_module_default = /*#__PURE__*/__webpack_require__.n(botonesLlamar_module);
 ;// CONCATENATED MODULE: ./src/componentes/BotonesLlamarWT/BotonesLlamar.js
 
 
 
 const BotonesLlamar = ({ ciudad  })=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-        className: (botonesLlamar_module_default()).contenedorBotones,
+    return /*#__PURE__*/ _jsxs("div", {
+        className: styles.contenedorBotones,
         children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                className: (botonesLlamar_module_default()).botonLlamar,
+            /*#__PURE__*/ _jsx("a", {
+                className: styles.botonLlamar,
                 href: `tel:${ciudad?.acf?.telefono}`,
                 children: "LLAMAR"
             }),
-            /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                className: (botonesLlamar_module_default()).botonWhatsapp,
+            /*#__PURE__*/ _jsx("a", {
+                className: styles.botonWhatsapp,
                 target: "_blank",
                 href: `https://wa.me/+34${(ciudad?.acf?.mobile).replace(/\s+/g, "")}`,
                 children: "WHATSAPP"
@@ -1200,7 +1184,7 @@ const BotonesLlamar = ({ ciudad  })=>{
         ]
     });
 };
-/* harmony default export */ const BotonesLlamarWT_BotonesLlamar = (BotonesLlamar);
+/* harmony default export */ const BotonesLlamarWT_BotonesLlamar = ((/* unused pure expression or super */ null && (BotonesLlamar)));
 
 ;// CONCATENATED MODULE: ./src/componentes/Layout/Layout.js
 
@@ -1225,9 +1209,7 @@ function Layout({ children , menu_list , ciudad  }) {
                 /*#__PURE__*/ jsx_runtime_.jsx(FooterMovil_FooterMobil, {}),
                 " ",
                 /*#__PURE__*/ jsx_runtime_.jsx(Footer_Footer, {}),
-                ciudad?.acf?.tienda === "" ? /*#__PURE__*/ jsx_runtime_.jsx(BotonLlamarFijo_BotonLlamarFijo, {
-                    ciudad: ciudad
-                }) : /*#__PURE__*/ jsx_runtime_.jsx(BotonesLlamarWT_BotonesLlamar, {
+                /*#__PURE__*/ jsx_runtime_.jsx(BotonLlamarFijo_BotonLlamarFijo, {
                     ciudad: ciudad
                 })
             ]
