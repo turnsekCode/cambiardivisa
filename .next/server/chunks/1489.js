@@ -1252,10 +1252,10 @@ const SeccionCuatroTexto = ({ landing  })=>{
         className: (_seccionCUatroTexto_module_css__WEBPACK_IMPORTED_MODULE_2___default().contenedorTexto),
         children: [
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("h3", {
-                children: landing.acf.cambiar_divisa.titulo
+                children: landing?.acf?.cambiar_divisa?.titulo
             }),
             /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("p", {
-                children: landing.acf.cambiar_divisa.texto
+                children: landing?.acf?.cambiar_divisa?.texto
             })
         ]
     });
