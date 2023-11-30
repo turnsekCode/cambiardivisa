@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
+import SeccionCuatroTexto from "@/componentes/SeccionCuatroTexto/SeccionCuatroTexto";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
 
 import Script from "next/script";
 
-const index = ({ ciudad, general, markers }) => {
+const index = ({ ciudad, general, markers, landing }) => {
   return (
     <>
       <Head>
@@ -26,13 +27,13 @@ const index = ({ ciudad, general, markers }) => {
       </Script>
       <Layout ciudad={ciudad}>
         <SeccionUno nombreCiudad={ciudad?.acf?.ciudad_landing} />
-
         <SeccionDos
           ciudad={ciudad}
           comprar={ciudad?.acf?.vende_divisa}
           markers={markers}
           telefono={ciudad?.acf?.telefono}
-        />
+        />{" "}
+        <SeccionCuatroTexto landing={landing} />
       </Layout>
     </>
   );
@@ -58,12 +59,17 @@ export async function getStaticProps() {
     `https://panel.quickgold.es/markers${tienda}.json`
   );
   const markers = await marker.json();
+  const landing1 = await fetch(
+    `https://panel.quickgold.es/wp-json/acf/v3/pages/17546`
+  );
+  const landing = await landing1.json();
 
   return {
     props: {
       ciudad,
       general,
       markers,
+      landing,
     },
     revalidate: 1,
   };

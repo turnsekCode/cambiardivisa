@@ -6,7 +6,7 @@ import React from "react";
 import Script from "next/script";
 import SeccionTres from "@/componentes/SeccionTres/SeccionTres";
 import SeccionCuatroTexto from "@/componentes/SeccionCuatroTexto/SeccionCuatroTexto";
-const index = ({ ciudad, tiendaGoogle, general }) => {
+const index = ({ ciudad, tiendaGoogle, general, landing }) => {
   return (
     <>
       <Head>
@@ -35,7 +35,7 @@ const index = ({ ciudad, tiendaGoogle, general }) => {
           comprar={ciudad?.acf?.vende_divisa}
           telefono={ciudad?.acf?.telefono}
         />
-        <SeccionCuatroTexto />
+        <SeccionCuatroTexto landing={landing} />
       </Layout>
     </>
   );
@@ -52,6 +52,10 @@ export async function getStaticProps() {
     `https://panel.quickgold.es/wp-json/acf/v3/pages/${idPaginaWp}`
   );
   const ciudad = await ciudad1.json();
+  const landing1 = await fetch(
+    `https://panel.quickgold.es/wp-json/acf/v3/pages/17546`
+  );
+  const landing = await landing1.json();
   //fin datos de los campos personalizados de la ciudad
   const res = await fetch(
     `https://panel.quickgold.es/wp-json/acf/v3/pages/${apiGeneral}`
@@ -69,6 +73,7 @@ export async function getStaticProps() {
       ciudad,
       tiendaGoogle,
       general,
+      landing,
     },
     revalidate: 1,
   };
