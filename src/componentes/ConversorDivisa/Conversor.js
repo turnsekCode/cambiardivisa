@@ -8,7 +8,7 @@ const ConversorDivisa = ({ ciudad }) => {
   const [switched, setSwitched] = useState(null);
   const comprar = ciudad?.acf?.vende_divisa;
   return (
-    <div className={styles.contendorBloques}>
+    <section className={styles.contendorBloques}>
       <h2>Cambio de divisa</h2>
       <p className={styles.contendorBloquesTexto}>
         Descubre el valor de la moneda que te interesa.
@@ -73,7 +73,7 @@ const ConversorDivisa = ({ ciudad }) => {
           selectDivisa={selectDivisa}
         />
       )}
-    </div>
+    </section>
   );
 };
 

@@ -5,10 +5,10 @@ import styles from "./seccionDos.module.css";
 
 const SeccionDos = ({ ciudad, comprar, markers, telefono }) => {
   return (
-    <div className={styles.contenedorSeccionDos}>
+    <article className={styles.contenedorSeccionDos}>
       <Conversor comprar={comprar} ciudad={ciudad} telefono={telefono} />
       <ListadoTiendas ciudad={ciudad} markers={markers} telefono={telefono} />
-    </div>
+    </article>
   );
 };
 

@@ -5,6 +5,7 @@ import SeccionUno from "@/componentes/SeccionUnoTienda/SeccionUnoTienda";
 import React from "react";
 import Script from "next/script";
 import SeccionTres from "@/componentes/SeccionTres/SeccionTres";
+import SeccionCuatroTexto from "@/componentes/SeccionCuatroTexto/SeccionCuatroTexto";
 const index = ({ ciudad, tiendaGoogle, general }) => {
   return (
     <>
@@ -34,6 +35,7 @@ const index = ({ ciudad, tiendaGoogle, general }) => {
           comprar={ciudad?.acf?.vende_divisa}
           telefono={ciudad?.acf?.telefono}
         />
+        <SeccionCuatroTexto />
       </Layout>
     </>
   );

@@ -828,7 +828,7 @@ const ConversorDivisa = ({ ciudad  })=>{
     const [selectDivisa, setSelectDivisa] = (0,external_react_.useState)(true);
     const [switched, setSwitched] = (0,external_react_.useState)(null);
     const comprar = ciudad?.acf?.vende_divisa;
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("section", {
         className: (estilosConversor_module_default()).contendorBloques,
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx("h2", {

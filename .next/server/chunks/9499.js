@@ -363,7 +363,7 @@ var seccionDos_module_default = /*#__PURE__*/__webpack_require__.n(seccionDos_mo
 
 
 const SeccionTres_SeccionTres = ({ ciudad , telefono , tiendaGoogle , comprar  })=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
+    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)("article", {
         className: (seccionDos_module_default()).contenedorSeccionDos,
         children: [
             /*#__PURE__*/ jsx_runtime_.jsx(Conversor/* default */.Z, {
