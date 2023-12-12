@@ -21,6 +21,7 @@ const Header = () => {
               className={styles.logo}
               width={163}
               height={30}
+              priority
             />
           </a>
         </figure>

@@ -3,7 +3,6 @@ import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
 import SeccionCuatroTexto from "@/componentes/SeccionCuatroTexto/SeccionCuatroTexto";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
-
 import Script from "next/script";
 
 const index = ({ ciudad, general, markers, landing }) => {
