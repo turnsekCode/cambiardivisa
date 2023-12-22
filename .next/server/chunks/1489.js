@@ -408,10 +408,14 @@ function NuevoConversor2({ ciudad , setSelectDivisa , selectDivisa  }) {
                         className: (estilosConversor_module_default()).bloqueBotonLamarTexto,
                         children: [
                             "\xbfSab\xedas que hacemos ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("strong", {
                                 children: "mejoras de precio por cantidad"
                             }),
-                            "?. \xa1LL\xc1MANOS!"
+                            "?.",
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            "\xa1LL\xc1MANOS!"
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("a", {
@@ -742,10 +746,14 @@ function Vender_NuevoConversor2({ ciudad , setSelectDivisa , selectDivisa  }) {
                         className: (estilosConversor_module_default()).bloqueBotonLamarTexto,
                         children: [
                             "\xbfSab\xedas que hacemos ",
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
                             /*#__PURE__*/ jsx_runtime_.jsx("strong", {
                                 children: "mejoras de precio por cantidad"
                             }),
-                            "?. \xa1LL\xc1MANOS!"
+                            "?.",
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            /*#__PURE__*/ jsx_runtime_.jsx("br", {}),
+                            "\xa1LL\xc1MANOS!"
                         ]
                     }),
                     /*#__PURE__*/ jsx_runtime_.jsx("a", {

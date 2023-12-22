@@ -124,7 +124,7 @@ var image_default = /*#__PURE__*/__webpack_require__.n(next_image);
 const ResenasGoogle = ({ tiendaGoogle , ciudad  })=>{
     return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
         children: [
-            tiendaGoogle?.result?.reviews.map((resena, index)=>{
+            tiendaGoogle?.result?.reviews?.map((resena, index)=>{
                 if (resena.rating > 4.7) {
                     var img_valoracion = 69;
                 } else if (resena.rating < 4.8 && resena.rating < 4.3) {
@@ -405,23 +405,23 @@ const SeccionTres_SeccionTres = ({ ciudad , telefono , tiendaGoogle , comprar  }
 const SeccionUno = ({ ciudad , tiendaGoogle  })=>{
     //const [toggler, setToggler] = useState(false);
     const tienda = tiendaGoogle?.result?.rating;
-    if (tienda.estrellas > 4.7) {
+    if (tienda?.estrellas > 4.7) {
         var img_valoracion = 69;
-    } else if (tienda.estrellas < 4.8 && tienda.estrellas < 4.3) {
+    } else if (tienda?.estrellas < 4.8 && tienda?.estrellas < 4.3) {
         var img_valoracion = 62;
-    } else if (tienda.estrellas < 4.4 && tienda.estrellas < 3.7) {
+    } else if (tienda?.estrellas < 4.4 && tienda?.estrellas < 3.7) {
         var img_valoracion = 55;
-    } else if (tienda.estrellas < 3.8 && tienda.estrellas < 3.3) {
+    } else if (tienda?.estrellas < 3.8 && tienda?.estrellas < 3.3) {
         var img_valoracion = 48;
-    } else if (tienda.estrellas < 3.4 && tienda.estrellas < 2.7) {
+    } else if (tienda?.estrellas < 3.4 && tienda?.estrellas < 2.7) {
         var img_valoracion = 41;
-    } else if (tienda.estrellas < 2.8 && tienda.estrellas < 2.3) {
+    } else if (tienda?.estrellas < 2.8 && tienda?.estrellas < 2.3) {
         var img_valoracion = 34;
-    } else if (tienda.estrellas < 2.4 && tienda.estrellas < 1.7) {
+    } else if (tienda?.estrellas < 2.4 && tienda?.estrellas < 1.7) {
         var img_valoracion = 27;
-    } else if (tienda.estrellas < 1.8 && tienda.estrellas < 1.3) {
+    } else if (tienda?.estrellas < 1.8 && tienda?.estrellas < 1.3) {
         var img_valoracion = 20;
-    } else if (tienda.estrellas < 1.4 && tienda.estrellas < 0.7) {
+    } else if (tienda?.estrellas < 1.4 && tienda?.estrellas < 0.7) {
         var img_valoracion = 13;
     }
     return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("article", {

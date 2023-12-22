@@ -5,7 +5,7 @@ import Image from "next/image";
 const ResenasGoogle = ({ tiendaGoogle, ciudad }) => {
   return (
     <>
-      {tiendaGoogle?.result?.reviews.map((resena, index) => {
+      {tiendaGoogle?.result?.reviews?.map((resena, index) => {
         if (resena.rating > 4.7) {
           var img_valoracion = 69;
         } else if (resena.rating < 4.8 && resena.rating < 4.3) {

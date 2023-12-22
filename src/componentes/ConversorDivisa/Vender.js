@@ -240,7 +240,10 @@ function NuevoConversor2({ ciudad, setSelectDivisa, selectDivisa }) {
       </div>
       <div className={styles.bloqueBotonLamar}>
         <p className={styles.bloqueBotonLamarTexto}>
-          ¿Sabías que hacemos <strong>mejoras de precio por cantidad</strong>?.
+          ¿Sabías que hacemos <br></br>
+          <strong>mejoras de precio por cantidad</strong>?.
+          <br></br>
+          <br></br>
           ¡LLÁMANOS!
         </p>
         <a
