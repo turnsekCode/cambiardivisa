@@ -21,6 +21,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _componentes_SeccionDos_SeccionDos__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(49);
 /* harmony import */ var _componentes_SeccionCuatroTexto_SeccionCuatroTexto__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2013);
 /* harmony import */ var _componentes_SeccionUno_SeccionUno__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3381);
+/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(4298);
+/* harmony import */ var next_script__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_script__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 
@@ -50,8 +53,14 @@ const index = ({ ciudad , general , markers , landing  })=>{
                     /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("link", {
                         rel: "icon",
                         href: "/assets/icon.png"
-                    })
+                    }),
+                    ciudad?.acf?.nonscript_chat
                 ]
+            }),
+            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx((next_script__WEBPACK_IMPORTED_MODULE_6___default()), {
+                strategy: "lazyOnload",
+                id: "livechat",
+                children: ciudad?.acf?.script_chat
             }),
             /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(_componentes_Layout_Layout__WEBPACK_IMPORTED_MODULE_2__/* ["default"] */ .Z, {
                 ciudad: ciudad,
@@ -86,7 +95,7 @@ async function getStaticProps() {
     const res = await fetch(`https://panel.quickgold.es/wp-json/acf/v3/pages/${apiGeneral}`);
     const general = await res.json();
     const tienda = ciudad?.acf?.ciudad_oro;
-    const marker = await fetch(`https://panel.quickgold.es/markers${tienda}.json`);
+    const marker = await fetch(`https://panel.quickgold.es/markersMapa/markers${tienda}.json`);
     const markers = await marker.json();
     const landing1 = await fetch(`https://panel.quickgold.es/wp-json/acf/v3/pages/17546`);
     const landing = await landing1.json();
@@ -300,6 +309,13 @@ module.exports = require("react");
 
 /***/ }),
 
+/***/ 6405:
+/***/ ((module) => {
+
+module.exports = require("react-dom");
+
+/***/ }),
+
 /***/ 5372:
 /***/ ((module) => {
 
@@ -328,7 +344,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [9210,2636,172,5675,1664,1489,7751], () => (__webpack_exec__(812)));
+var __webpack_exports__ = __webpack_require__.X(0, [9210,2636,172,5675,4298,1664,1489,7751], () => (__webpack_exec__(812)));
 module.exports = __webpack_exports__;
 
 })();

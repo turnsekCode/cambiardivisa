@@ -3,7 +3,6 @@ import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
 import SeccionCuatroTexto from "@/componentes/SeccionCuatroTexto/SeccionCuatroTexto";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
-
 import Script from "next/script";
 
 const index = ({ ciudad, general, markers, landing }) => {
@@ -62,7 +61,7 @@ export async function getStaticProps() {
   const general = await res.json();
   const tienda = ciudad?.acf?.ciudad_oro;
   const marker = await fetch(
-    `https://panel.quickgold.es/markers${tienda}.json`
+    `https://panel.quickgold.es/markersMapa/markers${tienda}.json`
   );
   const markers = await marker.json();
   const landing1 = await fetch(

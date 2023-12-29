@@ -3,6 +3,7 @@ import Layout from "@/componentes/Layout/Layout";
 import SeccionDos from "@/componentes/SeccionDos/SeccionDos";
 import SeccionCuatroTexto from "@/componentes/SeccionCuatroTexto/SeccionCuatroTexto";
 import SeccionUno from "@/componentes/SeccionUno/SeccionUno";
+import Script from "next/script";
 
 const index = ({ ciudad, general, markers, landing }) => {
   return (
@@ -18,7 +19,11 @@ const index = ({ ciudad, general, markers, landing }) => {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/assets/icon.png" />
+        {ciudad?.acf?.nonscript_chat}
       </Head>
+      <Script strategy="lazyOnload" id="livechat">
+        {ciudad?.acf?.script_chat}
+      </Script>
       <Layout ciudad={ciudad}>
         <SeccionUno nombreCiudad={ciudad?.acf?.ciudad_landing} />
         <SeccionDos
@@ -51,7 +56,7 @@ export async function getStaticProps() {
   const general = await res.json();
   const tienda = ciudad?.acf?.ciudad_oro;
   const marker = await fetch(
-    `https://panel.quickgold.es/markers${tienda}.json`
+    `https://panel.quickgold.es/markersMapa/markers${tienda}.json`
   );
   const markers = await marker.json();
   const landing1 = await fetch(
