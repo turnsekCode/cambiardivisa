@@ -85,7 +85,7 @@ async function getStaticProps() {
     const res = await fetch(`https://panel.quickgold.es/wp-json/acf/v3/pages/${apiGeneral}`);
     const general = await res.json();
     const tienda = ciudad?.acf?.ciudad_oro;
-    const marker = await fetch(`https://panel.quickgold.es/markersMapa/markers${tienda}.json`);
+    const marker = await fetch(`https://panel.quickgold.es/markersMapaLandings/markers${tienda}.json`);
     const markers = await marker.json();
     const landing1 = await fetch(`https://panel.quickgold.es/wp-json/acf/v3/pages/17546`);
     const landing = await landing1.json();
