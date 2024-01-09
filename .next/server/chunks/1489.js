@@ -418,11 +418,14 @@ function NuevoConversor2({ ciudad , setSelectDivisa , selectDivisa  }) {
                             "\xa1LL\xc1MANOS!"
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                         title: `Llamar a Quickgold ${ciudad?.acf?.ciudad_landing}`,
                         href: `tel:${ciudad?.acf?.telefono}`,
                         className: (estilosConversor_module_default()).botonLlamarTienda,
-                        children: "LLAMA GRATIS"
+                        children: [
+                            "LLAMA AL ",
+                            ciudad?.acf?.telefono
+                        ]
                     })
                 ]
             }),
@@ -756,11 +759,14 @@ function Vender_NuevoConversor2({ ciudad , setSelectDivisa , selectDivisa  }) {
                             "\xa1LL\xc1MANOS!"
                         ]
                     }),
-                    /*#__PURE__*/ jsx_runtime_.jsx("a", {
+                    /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
                         title: `Llamar a Quickgold ${ciudad?.acf?.ciudad_landing}`,
                         href: `tel:${ciudad?.acf?.telefono}`,
                         className: (estilosConversor_module_default()).botonLlamarTienda,
-                        children: "LLAMA GRATIS"
+                        children: [
+                            "LLAMA AL ",
+                            ciudad?.acf?.telefono
+                        ]
                     })
                 ]
             }),
