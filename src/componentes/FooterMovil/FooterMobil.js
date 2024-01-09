@@ -213,7 +213,7 @@ const FooterMobil = () => {
         </div>
       </div>*/}
       <p className={styles.textoFooter}>
-        © 2023 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS
+        © 2024 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS
         LUMIERE, 23, NAVE 9 46980 PATERNA, VALENCIA - central@quickgold.es - 900
         373 629 Registro Mercantil de Valencia , Tomo 9220, Libro 6503, Folio
         215, Hoja V-140170, Inscripción 2ª. Política de privacidad · Política de

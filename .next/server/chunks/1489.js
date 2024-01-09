@@ -1087,7 +1087,7 @@ const Footer = ()=>{
                 }),
                 /*#__PURE__*/ jsx_runtime_.jsx("p", {
                     className: (footer_module_default()).registro,
-                    children: "\xa9 2023 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS LUMIERE, 23, NAVE 9 46980 PATERNA, VALENCIA - central@quickgold.es - 900 373 629 Registro Mercantil de Valencia , Tomo 9220, Libro 6503, Folio 215, Hoja V-140170, Inscripci\xf3n 2\xaa."
+                    children: "\xa9 2024 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS LUMIERE, 23, NAVE 9 46980 PATERNA, VALENCIA - central@quickgold.es - 900 373 629 Registro Mercantil de Valencia , Tomo 9220, Libro 6503, Folio 215, Hoja V-140170, Inscripci\xf3n 2\xaa."
                 })
             ]
         })
@@ -1157,7 +1157,7 @@ const FooterMobil = ()=>{
             }),
             /*#__PURE__*/ jsx_runtime_.jsx("p", {
                 className: (footerMobil_module_default()).textoFooter,
-                children: "\xa9 2023 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS LUMIERE, 23, NAVE 9 46980 PATERNA, VALENCIA - central@quickgold.es - 900 373 629 Registro Mercantil de Valencia , Tomo 9220, Libro 6503, Folio 215, Hoja V-140170, Inscripci\xf3n 2\xaa. Pol\xedtica de privacidad \xb7 Pol\xedtica de Calidad"
+                children: "\xa9 2024 Quickgold | GRUNGO, S.L. - B53910071 - RONDA AUGUSTE Y LOUIS LUMIERE, 23, NAVE 9 46980 PATERNA, VALENCIA - central@quickgold.es - 900 373 629 Registro Mercantil de Valencia , Tomo 9220, Libro 6503, Folio 215, Hoja V-140170, Inscripci\xf3n 2\xaa. Pol\xedtica de privacidad \xb7 Pol\xedtica de Calidad"
             })
         ]
     });
