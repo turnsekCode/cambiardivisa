@@ -1174,9 +1174,12 @@ var botonLlamarFijo_module_default = /*#__PURE__*/__webpack_require__.n(botonLla
 const BotonLlamarFijo = ({ ciudad  })=>{
     return /*#__PURE__*/ jsx_runtime_.jsx("div", {
         className: (botonLlamarFijo_module_default()).contenedorBotonFijo,
-        children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
+        children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("a", {
             href: `tel:${ciudad?.acf?.telefono}`,
-            children: "LLAMA GRATIS"
+            children: [
+                "LLAMA AL ",
+                ciudad?.acf?.telefono
+            ]
         })
     });
 };
